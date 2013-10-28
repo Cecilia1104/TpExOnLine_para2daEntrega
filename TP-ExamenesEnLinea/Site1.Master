@@ -33,7 +33,7 @@
             <div class="btn-group">
                 <a href="CursosProfesor.aspx" class="btn btn-large btn-primary"><i class="icon-edit icon-white">
                 </i>Mis Cursos</a> <a href="ExamenesProfesor.aspx" class="btn btn-large btn-primary">
-                    <i class=" icon-list icon-white"></i>Mis Examenes</a> <i class="icon-off icon-white"></i>
+                    <i class=" icon-list icon-white"></i>Mis Examenes</a> 
                 <asp:Button ID="btnsalir" runat="server" Text="Salir" 
                     CssClass="btn btn-large btn-primary" onclick="btnsalir_Click" 
                     ValidationGroup="btnexit" />

@@ -34,16 +34,24 @@ namespace TP_ExamenesEnLinea
             }
         }
 
-        private void abrirSesionProfesor(String passUsuario, String mailU)
+        private void erroLogueo()
+        {
+            string mensaje = "Usuario y/o contraseña incorrecta.Reingrese";
+            lblmensaje.Text = mensaje;
+            //RequiredFieldValidator2.ErrorMessage = "Contraseña Incorrecta";
+            //Response.Redirect("LoginUsuario.aspx?msj=" + mensaje);
+        }
+
+        private void abrirSesionProfesor(string mailu, string passu)
         {
             try
             {
-                    int id = elServicio.RecuperarIdLogueado(passUsuario);
-                    string nombre = elServicio.RecuperaNombreLogueado(mailU);
+                    int id = elServicio.RecuperarIdLogueado(passu);
+                    string nombre = elServicio.RecuperaNombreLogueado(mailu);
                  
                     Session["Id"] = id;
                     Session["Logueado"] = nombre;
-                    Session["Email"] = mailU;
+                    Session["Email"] = mailu;
                     Response.Redirect("~/AdminProfesor.aspx");  
             }
             catch (Exception ex)
@@ -54,13 +62,7 @@ namespace TP_ExamenesEnLinea
             }
         }
 
-        private void erroLogueo()
-        {
-            string mensaje = "Usuario y/o contraseña incorrecta.Reingrese";
-                lblmensaje.Text = mensaje;
-                RequiredFieldValidator2.ErrorMessage = "Contraseña Incorrecta";
-                Response.Redirect("LoginUsuario.aspx?msj=" + mensaje);
-        }
+       
       
     }
 }

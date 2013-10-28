@@ -85,13 +85,13 @@ namespace TP_ExamenesEnLinea {
         protected global::System.Web.UI.WebControls.TextBox txtmail;
         
         /// <summary>
-        /// Control lblcontraseñaactual.
+        /// Control btnGuardarCambios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblcontraseñaactual;
+        protected global::System.Web.UI.WebControls.Button btnGuardarCambios;
         
         /// <summary>
         /// Control txtcontraseñaactual.
@@ -139,6 +139,15 @@ namespace TP_ExamenesEnLinea {
         protected global::System.Web.UI.WebControls.TextBox txtrepetircontraseña;
         
         /// <summary>
+        /// Control RequiredFieldValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
         /// Control CompareValidator1.
         /// </summary>
         /// <remarks>
@@ -164,14 +173,5 @@ namespace TP_ExamenesEnLinea {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblnueva;
-        
-        /// <summary>
-        /// Control Button1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

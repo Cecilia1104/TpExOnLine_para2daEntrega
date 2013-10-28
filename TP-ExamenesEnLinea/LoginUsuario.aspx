@@ -29,22 +29,22 @@
                         <div class="controls">
                             <asp:TextBox ID="txtmail" runat="server" placeholder="Email"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Ingrese su email"
-                                ControlToValidate="txtmail" Display="Dynamic" Text="*Campo obligatorio" CssClass="text-danger"></asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Formato de mail Incorrecto" ControlToValidate="txtmail" CssClass="text-danger" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"></asp:RegularExpressionValidator>
+                                ControlToValidate="txtmail" Display="Dynamic" Text="*Campo obligatorio" CssClass="text-danger" ValidationGroup="validar"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Formato de mail Incorrecto" ControlToValidate="txtmail" CssClass="text-danger" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic" ValidationGroup="validar"></asp:RegularExpressionValidator>
                         
                         </div>
                         <asp:Label ID="lblpass" runat="server" class="control-label" Text="Password"></asp:Label>
                         <div class="controls">
                             <asp:TextBox ID="txtpass" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Ingrese su password"
-                                ControlToValidate="txtpass" Display="Dynamic" Text="*Campo obligatorio" CssClass="text-danger"></asp:RequiredFieldValidator>
+                                ControlToValidate="txtpass" Display="Dynamic" Text="*Campo obligatorio" CssClass="text-danger" ValidationGroup="validar"></asp:RequiredFieldValidator>
                         </div>
                         <div class="controls">
                             <asp:CheckBox ID="CheckBox1" runat="server" Text="Remember me" />
                             <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Ingresar" 
-                                onclick="Button1_Click" />
+                                onclick="Button1_Click" ValidationGroup="validar" />
                             <br />
-                            <asp:Label ID="lblmensaje" runat="server" Text=">"></asp:Label>
+                            <asp:Label ID="lblmensaje" runat="server" Text="" CssClass="text-danger"></asp:Label>
                         </div>
                     </div>
                 </div>

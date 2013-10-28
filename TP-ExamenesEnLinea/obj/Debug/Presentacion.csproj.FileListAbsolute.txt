@@ -16,3 +16,12 @@ C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLin
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\TP-ExamenesEnLinea\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\TP-ExamenesEnLinea\obj\Debug\TP-ExamenesEnLinea.dll
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\TP-ExamenesEnLinea\obj\Debug\TP-ExamenesEnLinea.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\bin\TP-ExamenesEnLinea.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\bin\TP-ExamenesEnLinea.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\bin\Negocio.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\bin\Datos.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\bin\Negocio.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\bin\Datos.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\obj\Debug\TP-ExamenesEnLinea.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\TP-ExamenesEnLinea\obj\Debug\TP-ExamenesEnLinea.pdb

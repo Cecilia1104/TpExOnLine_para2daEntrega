@@ -18,20 +18,17 @@ namespace Negocio
             var cursos = elCurso.listarCursos(idlogueado);
             return cursos;
         }
-        //public void AltaCurso(string nombre, int estado, DateTime fini, DateTime ffin, int id_p)
+        public void AltaCurso(string nombre, int estado, DateTime fini, DateTime ffin, int id_p)
+        {
+            elCurso.CrearNuevoCurso(nombre, estado, fini, ffin, id_p);
+        }
+
+        //public void AltaCurso(string nombre, int estado, DateTime fini, DateTime ffin, int id_p, string mails)
         //{
-        //    elCurso.CrearNuevoCurso(nombre, estado, fini, ffin, id_p);
+        //    throw new NotImplementedException();
         //}
 
-        public void AltaCurso(string nombre, int estado, DateTime fini, DateTime ffin, int id_p, string mails)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AltaCurso(string nombre, int estado, DateTime fini, int id_p, string mails)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         //public void actualizarDatosCursos(int id_p, string Curso_Nombre, string Examen_Nombre, string Fecha_Examen, string Rindieron)
         //{

@@ -12,3 +12,10 @@ C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLin
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\Negocio\obj\Debug\Negocio.dll
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\Negocio\obj\Debug\Negocio.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Negocio\bin\Debug\Negocio.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Negocio\bin\Debug\Negocio.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Negocio\bin\Debug\Datos.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Negocio\bin\Debug\Datos.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Negocio\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Negocio\obj\Debug\Negocio.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Negocio\obj\Debug\Negocio.pdb

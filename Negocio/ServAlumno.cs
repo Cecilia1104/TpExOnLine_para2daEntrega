@@ -19,6 +19,15 @@ namespace Negocio
             string NameUser = esAlumno.BuscarNombre(mailu);
             return NameUser;
         }
+        public string RecuperarApellidoLogueado(string mailu)
+        {
+            string ApellidoUser = esAlumno.BuscarApellido(mailu);
+            return ApellidoUser;
+        }
+        public int RecuperarDniLogueado(string mailu)
+        {
+            return esAlumno.BuscarDNI(mailu);
+        }
 
         public string recuperarMailAlumno(int id_p)
         {
@@ -33,13 +42,14 @@ namespace Negocio
         }
 
 
-
-        public bool CambiarContrasenia(int id_p, string p, string p_2)
+        //Cambiar contraseña:
+        public bool CambiarContraseniaAlumno(string mail, string clave, string nueva)
         {
-            if (esAlumno.modificarContrasenia(id_p, p, p_2))
+            if (esAlumno.cambiarContrasenia(mail, clave, nueva))
+            {
                 return true;
-            else
-                return false;
+            }
+            return false;
         }
 
         public void EditarDatos(int id_p, string p, string p_2, string p_3)

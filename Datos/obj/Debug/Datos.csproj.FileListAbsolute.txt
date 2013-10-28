@@ -10,3 +10,9 @@ C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLin
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\Datos\obj\Debug\Datos.dll
 C:\Users\Juliana\Documents\Visual Studio 2010\Settings\Projects\TP-ExamenesEnLinea\Datos\obj\Debug\Datos.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Datos\bin\Debug\Datos.dll.config
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Datos\bin\Debug\Datos.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Datos\bin\Debug\Datos.pdb
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Datos\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Datos\obj\Debug\Datos.dll
+C:\Documents and Settings\Vaio\PW3_TPFINAL\TP\TpExOnLine_para2daEntrega\Datos\obj\Debug\Datos.pdb

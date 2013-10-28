@@ -35,7 +35,7 @@ namespace TP_ExamenesEnLinea
             }
             catch (Exception ex)
             {
-                string mensaje = "Error al llenar GridView de datos";
+                string mensaje = "Error al llenar GridView de datos" + ex;
                 lblmensaje.Text = mensaje;
                 //ClientException.LogException(ex, mensaje); Server.Transfer("ErrorGeneral.aspx");
             }

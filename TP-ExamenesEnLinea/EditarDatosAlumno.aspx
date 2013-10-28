@@ -25,7 +25,13 @@
                         *No se puede editar</p>
                 </div>
                 <br />
-                <asp:Label ID="lblcontraseñaactual" runat="server" Text="Contraseña actual"></asp:Label>
+                <asp:Button ID="btnGuardarCambios" runat="server" Text="Guardar cambios" CssClass="btn btn-success"
+                    OnClick="Button1_Click" ValidationGroup="Editar" />
+                <br />
+                <br />
+                <h4>
+                    Editar contraseña</h4>
+
                 <div>
                     <asp:TextBox ID="txtcontraseñaactual" runat="server" ValidationGroup="validar"></asp:TextBox></div>
                 <br />
@@ -37,17 +43,17 @@
                     <asp:Label ID="lblrepetircontraseña" runat="server" Text="Repetir contraseña"></asp:Label>
                     <div>
                         <asp:TextBox ID="txtrepetircontraseña" TextMode="Password" runat="server" ValidationGroup="validar"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtrepetircontraseña"
+                            ErrorMessage="*Campo obligatorio" ValidationGroup="validar" CssClass="text-danger"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Las contraseñas deben coincidir"
                             ControlToCompare="txtcontraseñanueva" ControlToValidate="txtrepetircontraseña"
-                            Display="Dynamic" CssClass="text-danger"></asp:CompareValidator><br />
-                        <asp:Button ID="Button2" runat="server" CssClass="btn-mini" Text="Validar Contraseña"
-                            ValidationGroup="validar" onclick="Button2_Click" /><br />
-                        <asp:Label ID="lblnueva" runat="server" Text=""></asp:Label>
+                            runar="server" CssClass="text-danger" ValidationGroup="validar"></asp:CompareValidator><br />
                     </div>
                 </div>
                 <br />
-                <asp:Button ID="Button1" runat="server" Text="Guardar cambios" CssClass="btn btn-success "
-                    OnClick="Button1_Click" ValidationGroup="Editar" />
+                <asp:Button ID="Button2" runat="server" Text="Cambiar contraseña" CssClass="btn btn-success "
+                    OnClick="Button2_Click" ValidationGroup="validar" /><br />
+                <asp:Label ID="lblnueva" runat="server" Text="" CssClass="text-danger"></asp:Label>
             </div>
         </div>
     </div>

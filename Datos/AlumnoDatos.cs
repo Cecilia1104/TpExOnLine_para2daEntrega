@@ -22,11 +22,26 @@ namespace Datos
         public string BuscarNombre(string mailu)
         {
             var _name = (from b in ctx.Alumnos
-                             where b.Mail == mailu
-                             select b.Nombre).FirstOrDefault();
-             
+                         where b.Mail == mailu
+                         select b.Nombre).FirstOrDefault();
+
             return _name;
 
+        }
+        public string BuscarApellido(string mailu)
+        {
+            var _apellido = (from ap in ctx.Alumnos
+                             where ap.Mail == mailu
+                             select ap.Apellido).FirstOrDefault();
+            return _apellido;
+        }
+        public int BuscarDNI(string mailu)
+        {
+            var dni = (from u in ctx.Alumnos
+                       where u.Mail == mailu
+                       select u.DNI).FirstOrDefault();
+            Int32 dniAlumno = Convert.ToInt32(dni);
+            return dniAlumno;
         }
 
         public string BuscarMail(int id_p)
@@ -45,17 +60,21 @@ namespace Datos
             return _usPass;
         }
 
-        public bool modificarContrasenia(int id_p, string p, string p_2)
+        public bool cambiarContrasenia(string mail, string clave, string nueva)
         {
-            ALUMNO todos = ctx.Alumnos.Where(s => s.IdAlumno == id_p && s.Contrasenia == p).FirstOrDefault();
-            if (todos != null)
+            var idAlumno = (from a in ctx.Alumnos
+                            where a.Mail == mail && a.Contrasenia == clave
+                            select a.IdAlumno).FirstOrDefault();
+            ALUMNO alumno = ctx.Alumnos.Where(alu => alu.IdAlumno == idAlumno).FirstOrDefault();
+            if (alumno != null)
             {
-                todos.Contrasenia = p_2;
+                alumno.Contrasenia = nueva;
                 ctx.SaveChanges();
                 return true;
             }
-            else {
-                return false;  
+            else
+            {
+                return false;
             }
         }
 
@@ -74,7 +93,7 @@ namespace Datos
             if (resul != null)
                 return true;
             else
-                    return false;
+                return false;
         }
     }
 }

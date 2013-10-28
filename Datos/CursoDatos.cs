@@ -28,11 +28,13 @@ namespace Datos
         public void CrearNuevoCurso(string nombre, int estado, DateTime fini, DateTime ffin, int id_p)
         {
             CURSO miCurso = new CURSO();
+
             miCurso.Nombre = nombre;
             miCurso.Estado = estado;
             miCurso.FecIni = fini;
             miCurso.FecFin = ffin;
-            miCurso.IdCurso = id_p;
+            miCurso.ProfId = id_p;
+          
             ctxto.Cursos.AddObject(miCurso);
             ctxto.SaveChanges();
 

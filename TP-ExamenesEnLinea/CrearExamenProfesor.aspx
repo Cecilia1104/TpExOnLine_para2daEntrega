@@ -11,9 +11,7 @@
                 <asp:Label ID="lblcurso" runat="server" Text="Curso"></asp:Label>
                 <div>
                     <asp:DropDownList ID="ddlcursos" runat="server">
-                        <asp:ListItem Selected="True" Text="Seleccione curso" Value="0"></asp:ListItem>
-                        <asp:ListItem Text="Matematica 1" Value="1"></asp:ListItem>
-                        <asp:ListItem Text="Taller 2" Value="2"></asp:ListItem>
+                    
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Seleccione una opcion"
                         ControlToValidate="ddlcursos" Display="Static" Text="*Campo obligatorio" CssClass="text-danger"
@@ -32,10 +30,10 @@
                     <asp:TextBox ID="txtduracion" runat="server"></asp:TextBox>minutos</div>
                 <asp:Label ID="lblfectope" runat="server" Text="Fecha Tope"></asp:Label>
                 <div>
-                    <asp:TextBox ID="txtfectope" runat="server"></asp:TextBox>(MM/DD/AAAA)</div>
-                <asp:Label ID="lblhoratope" runat="server" Text="Hora Tope"></asp:Label>
+                   <fec:Calendario ID="fechatope" runat="server" />
+               <asp:Label ID="lblhoratope" runat="server" Text="Hora Tope"></asp:Label>
                 <div>
-                    <asp:TextBox ID="txthoratope" runat="server"></asp:TextBox>hh:mm</div>
+                    <asp:TextBox ID="txthoratope" runat="server"></asp:TextBox>hh:mm:ss</div>
                 <br />
                 <asp:Label ID="lblporcentaje" runat="server" Text="Porcentaje de aprobacion"></asp:Label>
                 <div>
@@ -54,5 +52,6 @@
                 <asp:Label ID="Label1" runat="server" CssClass="text-danger" Text=""></asp:Label>
             </div>
         </div>
+    </div>
     </div>
 </asp:Content>
