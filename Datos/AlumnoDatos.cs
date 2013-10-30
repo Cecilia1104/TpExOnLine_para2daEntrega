@@ -18,30 +18,51 @@ namespace Datos
             return _usId;
         }
 
+        
 
         public string BuscarNombre(string mailu)
         {
+            string userNombre = string.Empty;
             var _name = (from b in ctx.Alumnos
                          where b.Mail == mailu
                          select b.Nombre).FirstOrDefault();
-
-            return _name;
-
+            if(_name!=null)
+             { 
+                userNombre=_name;
+             }
+            else { 
+                userNombre = string.Empty; 
+            }
+           return userNombre;
         }
+
         public string BuscarApellido(string mailu)
         {
+            string userApellido = string.Empty;
             var _apellido = (from ap in ctx.Alumnos
                              where ap.Mail == mailu
                              select ap.Apellido).FirstOrDefault();
-            return _apellido;
+
+            if (_apellido != null)
+            {
+                userApellido = _apellido;
+            }
+            else
+            {
+                userApellido = string.Empty;
+            }
+            return userApellido;
+
         }
         public int BuscarDNI(string mailu)
         {
+            
             var dni = (from u in ctx.Alumnos
                        where u.Mail == mailu
                        select u.DNI).FirstOrDefault();
             Int32 dniAlumno = Convert.ToInt32(dni);
             return dniAlumno;
+           
         }
 
         public string BuscarMail(int id_p)
